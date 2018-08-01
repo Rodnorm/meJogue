@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hsport.mejogue.Dice_Settings">
+<Button
+        android:id="@+id/seis_lados"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/qnts"
+        android:layout_alignStart="@+id/qnts"
+        android:layout_below="@+id/qnts"
+        android:layout_marginTop="22dp"
+        android:text="6" />
+
+    <TextView
+        android:id="@+id/qnts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10px"
+        android:layout_marginTop="20px"
+        android:text="Quantos lados tem seu dado?" />
+
+
+    <Button
+        android:id="@+id/doze_lados"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/seis_lados"
+        android:layout_alignBottom="@+id/seis_lados"
+        android:layout_centerHorizontal="true"
+        android:text="12" />
+
+    <Button
+        android:id="@+id/vinte_lados"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/doze_lados"
+        android:layout_alignBottom="@+id/doze_lados"
+        android:layout_alignEnd="@+id/qnts"
+        android:layout_alignRight="@+id/qnts"
+        android:text="20" />
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/vinte_lados"
+        android:layout_margin="50dp"
+        android:src="@drawable/die_1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dado_option" />
+    <Button
+        android:id="@+id/voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dado_option"
+        android:layout_centerHorizontal="true"
+        android:text="Pronto!"
+        />
+</RelativeLayout>
